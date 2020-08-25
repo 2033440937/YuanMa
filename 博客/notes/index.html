@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="author" content="alex">
+<meta name="template" content="alex" />
+<meta name="fragment" content="!">
+<meta name="description" content="Life is so long, what do you always want to leave behind.">
+<meta name="keywords" content="日记">
+<title>日记 | 前端爱好者设设</title>
+<link rel="icon" href="/favicon.ico">
+<!-- loading样式 -->
+<link rel="stylesheet" href="//cdn.anlenotes.com/src/css/loading.css">
+<!-- 页面核心样式 -->
+<link rel="stylesheet" href="//cdn.anlenotes.com/src/css/style.css">
+<link rel="stylesheet" href="/notes/css/notes.css">
+<link rel="stylesheet" href="//cdn.anlenotes.com/src/css/iconfont.css">
+<!--页面小部件集成-->
+<script src="//cdn.anlenotes.com/src/js/tool.js"></script>
+<!-- 页面核心JavaScript -->
+<script src="//cdn.anlenotes.com/src/js/jquery.min.js"></script>
+<script src="//cdn.anlenotes.com/src/js/script.js"></script>
+<script src="//cdn.anlenotes.com/src/js/tocbot.min.js"></script>
+</head>
+<body>
+<!-- loading动画 -->
+<div id="pre-loader" class="loader-background">
+<div class="spinner">
+<div class="dot1">
+</div>
+<div class="dot2">
+</div>
+</div>
+</div>
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js">
+</script>
+<script type="text/javascript" language="JavaScript">
+	//: 判断网页是否加载完成
+document.onreadystatechange = function() {
+    if (document.readyState == "complete") {
+        $("#pre-loader").fadeOut("slow");
+        document.getElementById("pre-loader").remove();
+    }
+}
+</script>
+<div class="wrapper">
+<header>
+<!--PC端顶部导航-->
+<nav class="navbar">
+<div class="container">
+<div class="navbar-header header-logo"><a href="/notes">日记</a></div>
+<div class="menu navbar-right">
+<a class="menu-item" href="/">首页</a>
+<a class="menu-item" href="/about">关于</a>
+<input id="switch_default" type="checkbox" class="switch_default">
+<label for="switch_default" class="toggleBtn"></label>
+</div>
+</div>
+</nav>
+<!--移动端顶部导航-->
+<nav class="navbar-mobile" id="nav-mobile">
+<div class="container">
+<div class="navbar-header">
+<div>
+<a href="/notes">日记</a>
+<a id="mobile-toggle-theme"></a>
+</div>
+<div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+</div>
+<div class="menu" id="mobile-menu">
+<a class="menu-item" href="/">首页</a>
+<a class="menu-item" href="/about">关于</a>
+</div>
+</div>
+</nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+<!--页面内容-->
+<div class="main">
+<div class="container">
+<article class="post-wrap page">
+<div class="container prism-container">
+<div class="prism-wrapper" id="prism__wrapper">
+<section id="prism__post-list" class="prism-section row">
+<header class="prism-header" id="prism__header">
+<!--BGM嵌入-->
+<bgm>			
+<a class="prism-header ymusic" onclick="playbtu();" target="_blank"><i id="ydmc"></i></a>
+</bgm>
+</header>
+<h1 class="text-uppercase brand"></h1>
+<!--日记列表-->
+<article class="yue prism-post-item col-md-8 offset-md-2">
+<h1 class="prism-post-title">猫</h1>
+<div class="prism-post-time">
+<time class="text-uppercase">
+April 1 2020
+</time>
+</div>
+<div class="prism-content">
+<p>
+我家的猫又怀孕了，鼓着大肚子.<br>
+每当听到我的开门声音，它就会迈着小健步缓缓往上爬.<br>
+边爬边喵呜的叫着，当察觉到我是要下楼的时候.<br>
+便又折返到楼梯口，等我.<br>
+两只眼睛直勾勾的盯着我，生怕我突然转身又上了楼.<br>
+等我到达楼下的时候，它又喵呜叫着，往前走去.<br>
+边走，边回头看我，似乎在指引我.<br>
+前面有个小屋，屋里有个橱窗柜，里面放着猫粮.<br>
+我站在柜前不动，它见我不动，就在柜前用爪子挠.<br>
+又在我的腿边转圈，边转边蹭.<br>
+时不时喵呜叫着，显得很兴奋.<br>
+待我打开橱窗，拿过猫粮之后，它又一个箭的往它的碗跑去.<br>
+直到我倒了一整碗，才心满意足的开始享受.<br>
+它喜欢梳理它的毛,在太阳底下.<br>
+阳光打在它白黄的后背，美的出奇.<br>
+当我做饭的时候，它就前脚趴在橱柜上面.<br>
+眼睛又直勾勾的盯着我，看我在看它，它就喵呜的叫.<br>
+我知道它是馋那块肉.<br>
+上一次下的一窝崽，都送给别人了养了.<br>
+它总是静静的趴在门口的椅子上.<br>
+我不懂猫语，不知道它是否孤单.<br>
+</p>
+</div>
+</article>
+<article class="yue prism-post-item col-md-8 offset-md-2">
+<h1 class="prism-post-title">买字帖</h1>
+<div class="prism-post-time">
+<time class="text-uppercase">
+March 31 2020
+</time>
+</div>
+<div class="prism-content">
+<p>我妹的字帖写完了，要我给她去买.<br>
+"这个小农村有这个东西吗？"<br>
+我第一反应想到的是.<br>
+没办法，只能抱着去看一看的心态走一遭了.<br>
+许久没出门了，外面的光照着，有些刺眼.<br>
+想了想，决定去那一家小卖店试试.<br>
+它开在学校对面，有些年头了.<br>
+小时候在老家上小学，中午不回家，就在这里吃.<br>
+5块钱一顿，淡黄、像是铁做的碗，下面盛饭，上面盖菜.<br>
+外面还有DVD电视机，经常放着林叔的片子.<br>
+10多个小朋友围在大圆桌上，边吃边看.<br>
+我小时候许多电影都是在那里看的.<br>
+正想着，就已经到门口了.<br>
+环顾了一下四周.<br>
+陈设的变化不大，只是略感有些荒凉了.<br>
+没有看见大人，只有一个小姑娘.<br>
+七八岁左右，坐在板凳上，在玩手机.<br>
+"请问有字帖吗？"<br>
+可能是太专注，小姑娘没有听到.<br>
+我便靠近些,说到<br>
+"有字帖吗？练字的,字帖"<br>
+她回过神来，边说边向那边跑着<br>
+"字帖？是这个吗？"<br>
+我也跟她寻着过去<br>
+"啊，对，我挑两本"<br>
+"你收钱吗？一共多少钱？"<br>
+小姑娘看了看字帖，说是的.<br>
+刚准备转身过去，又转回来，犹豫了一刻<br>
+向我要两本字帖，说要进去问问大人多少钱.<br>
+"13"，小姑娘回来了,我掏出一百提给她.<br>
+然后坐在长凳子上等她找我钱.<br>
+翻了翻字帖.<br>
+有杜甫的诗句.<br>
+小姑娘跑过来，找我的钱，我也没数.<br>
+转身就走了<br>
+对面就是学校，里面有人在打篮球.<br>
+我顾不得观看，转身就往回走.<br>
+                      </p>
+</div>
+</article>
+<article class="yue prism-post-item col-md-8 offset-md-2">
+<h1 class="prism-post-title">春</h1>
+<div class="prism-post-time">
+<time class="text-uppercase">
+March 28 2020
+</time>
+</div>
+<div class="prism-content">
+        	<p>伸展个懒腰，翻个滚.<br>
+        	   看了看手机-凌晨02：25.<br>
+               又翻了个滚回来，叉掉浏览器，刷新x2，关机.<br>
+               外面还在下雨，卷着风，让我直哆嗦.<br>
+               将电脑抽到一边，裹上被子，寻着手机.<br>
+               滑动着QQ列表，回了几个不知何时给我发的消息.<br>
+               一天就这样昏昏沉沉的过去.<br>
+               如常，像是有预警一般.<br>
+               翻个身，右手提前埋伏在它的上空.<br>
+               等待它雷鸣般的轰炸前夕将它结束.<br>
+               雨，已经停了.<br>
+               但它还未离去，风里尽是它的味道.<br>
+                      </p>
+</div>
+</article>
+<article class="yue prism-post-item col-md-8 offset-md-2">
+<h1 class="prism-post-title">新开始</h1>
+<div class="prism-post-time">
+<time class="text-uppercase">
+March 26 2020
+</time>
+</div>
+<div class="prism-content">
+<p>看够了云蔚霞起.<br>
+                 一切只想从简.<br>
+         <code>chic</code>，如它的名字，简洁、朴素却别具一格，像映照了我的一生.<br>
+           每天都是新的开始，每一刻都值得怀念.<br>
+                      </p>
+</div>
+</article>
+</section>
+</div>
+</div>
+</article>
+</div> 
+</div>
+<!--页面按键-->
+<div class="container">
+<section id="prism__page__pagination" class="prism-pagination col-md-8 offset-md-2">
+<ul>
+<li class="next text-muted">
+<span title="已经到头了朋友~"><i class="iconfont">&#xe61c;</i></span>
+</li>
+<li class="prev">
+<a class="no-link" href="/page/2/" target="_self"><i class="iconfont">&#xe61b;</i></a>
+</li>
+</ul>
+</section>
+</div>
+<!--底部信息-->
+<footer id="prism__footer" class="footer">
+<div class="copyright">
+<span>© 2015-2020 | <a href="https://beian.miit.gov.cn/"  target="_blank" rel="noopener">陇ICP备20001455号</a> </span>
+</div>
+<!--百度统计-->
+
+</footer>
+<!--歌曲列表 网易云接口-->
+<script data-no-instant>
+var yaudio = new Audio();
+yaudio.controls = true;
+var musicArr=[
+             {mp3:"//api.imjad.cn/cloudmusic/?type=song&id=1327441896&br=128000&raw=ture"},{mp3:"//api.imjad.cn/cloudmusic/?type=song&id=1301573957&br=128000&raw=ture"}
+              ];
+ 
+/*首次随机播放*/
+var a=parseInt(Math.random()*musicArr.length);
+var sj=musicArr[a];
+yaudio.src=sj.mp3;
+</script>
+<script  src="/notes/js/player.js" data-no-instant></script>
+</div>
+</body>
+</html>
